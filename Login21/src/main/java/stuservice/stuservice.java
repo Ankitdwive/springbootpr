@@ -8,12 +8,12 @@ import java.util.Map;
 import modelstu.stu;
 
 public class stuservice {
-	private static Map<Long,stu>students=new HashMap<>();
+	private static Map<Long,stu>students=new HashMap<Long, stu>();
 	private static Long index=0l;
 	
 	
 	public static List<stu>getAllStudents(){
-		return new ArrayList<>(students.values());
+		return new ArrayList<stu>(students.values());
 		}
 	
 	public static stu getStudentDetail(Long StudentId){
